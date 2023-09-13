@@ -107,17 +107,17 @@ def find_gcd(a, b):
     :param b: int
     :return: int, the greatest common divisor of `a` and `b`.
     """
-
-    if (a == 0):
-        return b
-    if (b == 0):
-        return a
-
-    if (a == b):
-        return a
-
-    if (a > b):
-        return find_gcd(a-b, b)
+    divisor=0
+    if a > b:
+        for i in range(1,b+1):
+            if a % i == 0 and b % i == 0:
+                divisor = i
+            
+    if b > a:
+        for i in range(1,a+1):
+            if a % i == 0 and b % i == 0:
+                divisor = i
+    return divisor
 
 
 
