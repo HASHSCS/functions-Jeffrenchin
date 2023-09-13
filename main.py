@@ -7,7 +7,7 @@ def square(number):
     square = number ** 2
     return square 
 square(2)
-
+ 
 
 def reverse_string(s):
     """
@@ -16,12 +16,11 @@ def reverse_string(s):
     :return: str, the reversed string
     """
     n = ''
-    length = len(n)-1
+    length = len(s)-1
     while length >= 0:
-        n += n[length]
+        n += s[length]
         length -= 1
     return n
-s = "hello"
 reverse_string(s)
 
 def is_prime(n):
@@ -72,7 +71,7 @@ def odd_or_even(n):
     :param n: int
     :return: str, "Odd" or "Even"
     """
-    if n / 2 == 0:
+    if n % 2 == 0:
         return "Even"
     else:
         return "Odd"
