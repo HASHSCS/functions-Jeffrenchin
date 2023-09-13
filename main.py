@@ -72,6 +72,13 @@ def find_maximum(lst):
     pass  
     lst = [3, 5, 6, 3, 6, 9, 189]
     def find_maxium(list):
+            if not lst:
+                return None 
+        max_num = lst[0]  
+        for num in lst:
+            if num > max_num:
+                max_num = num
+        return max_num
 
 
 
@@ -103,7 +110,10 @@ def is_palindrome(s):
         ss=""
         for i in range(len(s)):
             ss=s[len(s)-i-1]
-        return ss
+        if ss ==s:
+            return True
+        else:
+            return False
 
 
 
