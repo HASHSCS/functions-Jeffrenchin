@@ -31,7 +31,7 @@ def is_prime(n):
     """
 
 
-    if n < 1 and n / 2 != 0:
+    if n < 1 and n % 2 != 0:
         return True
     else:
         return False
@@ -87,7 +87,7 @@ def is_palindrome(s):
 
     ss=""
     for i in range(len(s)):
-        ss=s[len(s)-i-1]
+        ss+=s[len(s)-i-1]
     if ss ==s:
         return True
     else:
