@@ -74,6 +74,7 @@ def find_maximum(lst):
     def find_maxium(list):
 
 
+
 def odd_or_even(n):
     """
     This function takes a number n and returns "Odd" if the number is odd and "Even" if the number is even.
@@ -99,7 +100,10 @@ def is_palindrome(s):
     """
     pass  
     def is_palindrome(s):
-        s = input("type a word")
+        ss=""
+        for i in range(len(s)):
+            ss=s[len(s)-i-1]
+        return ss
 
 
 
@@ -112,8 +116,6 @@ def find_gcd(a, b):
     :return: int, the greatest common divisor of `a` and `b`.
     """
     pass  
-
-    
     def find_gcd(a, b):
         if (a == 0):
         return b
