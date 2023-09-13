@@ -31,7 +31,7 @@ def is_prime(n):
     :return: bool, True if the number is prime, otherwise False
     """
 
-    n = int(input("type a number: "))
+
     if n < 1 and n / 2 != 0:
         return True
     else:
@@ -114,7 +114,7 @@ def find_gcd(a, b):
         for i in range(1,a+1):
             if a % i == 0 and b % i == 0:
                 divisor = i
-    return divisor
+    return divisor 
 
 
 
