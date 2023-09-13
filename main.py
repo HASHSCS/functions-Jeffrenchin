@@ -4,7 +4,6 @@ def square(number):
     :param number: int or float
     :return: int or float, the square of the input number
     """  
-    number = input("type a number or a word: ")
     square = number ** 2
     return square 
 square(2)
@@ -21,7 +20,7 @@ def reverse_string(s):
     while length >= 0:
         n += n[length]
         length -= 1
-    print(n)
+    return n
 s = "hello"
 reverse_string(s)
 
@@ -73,8 +72,6 @@ def odd_or_even(n):
     :param n: int
     :return: str, "Odd" or "Even"
     """
-   
-    n = int(input("type a number: "))
     if n / 2 == 0:
         return "Even"
     else:
