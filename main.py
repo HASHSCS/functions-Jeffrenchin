@@ -21,7 +21,7 @@ def reverse_string(s):
         n += s[length]
         length -= 1
     return n
-reverse_string(s)
+reverse_string("hello")
 
 def is_prime(n):
     """
