@@ -31,7 +31,7 @@ def is_prime(n):
     """
 
  
-    if n > 0 and n % 2 != 0:
+    if n != 0 and n % 2 != 0:
         return True
     else:
         return False
