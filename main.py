@@ -30,8 +30,8 @@ def is_prime(n):
     :return: bool, True if the number is prime, otherwise False
     """
 
-
-    if n < 1 and n % 2 != 0:
+ 
+    if n > 0 and n % 2 != 0:
         return True
     else:
         return False
