@@ -30,11 +30,11 @@ def is_prime(n):
     :return: bool, True if the number is prime, otherwise False
     """
 
- 
-    if n != 0 and n % 2 != 0:
-        return True
-    else:
-        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+        else:
+            return True
 is_prime(3)
 
 def factorial(n):
